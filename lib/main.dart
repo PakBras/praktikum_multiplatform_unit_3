@@ -17,13 +17,22 @@ class Myapp extends StatelessWidget{
   }
 }
 
-class HomePage extends StatelessWidget{
+class HomePage extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Praktikum Layout Flutter'),
+      appBar: AppBar(
+        title: Text('Praktikum Layout Flutter'),
       ),
-      body: 
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+          Container(color: Colors.red, height: 100, width: 100),
+          Container(color: Colors.green, height: 50, width: 100),
+          Container(color: Colors.blue, height: 80, width: 100),
+        ],
+      ),
     );
   }
 }
