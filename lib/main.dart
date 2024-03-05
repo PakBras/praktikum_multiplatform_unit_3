@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main(){
-  runApp(Myapp());
+void main() {
+  runApp(MyApp());
 }
 
-class Myapp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,7 +13,7 @@ class Myapp extends StatelessWidget{
         primarySwatch: Colors.blue,
       ),
       home: HomePage(),
-      );
+    );
   }
 }
 
@@ -24,13 +24,11 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Praktikum Layout Flutter'),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: ListView(
         children: <Widget>[
-          Container(color: Colors.red, height: 100, width: 100),
-          Container(color: Colors.green, height: 50, width: 50),
-          Container(color: Colors.blue, height: 80, width: 80),
+          Container(color: Colors.red, height: 500, width: 100),
+          Container(color: Colors.green, height: 500, width: 100),
+          Container(color: Colors.blue, height: 500, width: 100),
         ],
       ),
     );
